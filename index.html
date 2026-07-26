@@ -82,7 +82,16 @@ animation:shake 0.1s infinite;
 <div id="overlay6" class="overlay"></div>
 <div id="overlay7" class="overlay"></div>
 <div id="overlay8" class="overlay"></div>
-<div id="overlay9" class="overlay"><h1>FINAL MODE</h1></div>
+  <div id="overlay9" class="overlay"></div>
+  <div id="overlay10" class="overlay"> </div>
+<div id="overlay11" class="overlay"> </div>
+  <div id="overlay12" class="overlay"> </div>
+  <div id="overlay13" class="overlay"> </div>
+   <div id="overlay14" class="overlay"> </div>
+  <div id="overlay15" class="overlay"> </div>
+ <div id="overlay16" class="overlay"> </div>
+  <div id="overlay17" class="overlay"></div>
+<div id="overlay18" class="overlay"><h1>FINAL MODE</h1></div>
 
 <div class="flash" id="flash"></div>
 
@@ -101,14 +110,14 @@ function startExperience(){
 document.getElementById("startBtn").style.display="none";
 enterFullscreen();
 
-/* Build full history stack 1-9 */
-for(let i=1;i<=9;i++){
+/* Build full history stack 1-18 */
+for(let i=1;i<=18;i++){
 history.pushState({layer:i},"","#layer"+i);
 currentLayer=i;
 }
 
-/* Show only 9 */
-document.getElementById("overlay9").classList.add("show");
+/* Show only 18 */
+document.getElementById("overlay18").classList.add("show");
 
 startMusic();
 startExtremeEffects();
