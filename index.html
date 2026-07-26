@@ -91,7 +91,16 @@ animation:shake 0.1s infinite;
   <div id="overlay15" class="overlay"> </div>
  <div id="overlay16" class="overlay"> </div>
   <div id="overlay17" class="overlay"></div>
-<div id="overlay18" class="overlay"><h1>FINAL MODE</h1></div>
+<div id="overlay18" class="overlay">
+  <div id="overlay19" class="overlay"></div>
+<div id="overlay20" class="overlay"></div>
+<div id="overlay21" class="overlay"></div>
+<div id="overlay22" class="overlay"></div>
+<div id="overlay23" class="overlay"></div>
+<div id="overlay24" class="overlay"></div>
+<div id="overlay25" class="overlay"></div>
+  <div id="overlay26" class="overlay"></div>
+  <div id="overlay27" class="overlay"> </div><h1>FINAL MODE</h1></div>
 
 <div class="flash" id="flash"></div>
 
@@ -110,14 +119,14 @@ function startExperience(){
 document.getElementById("startBtn").style.display="none";
 enterFullscreen();
 
-/* Build full history stack 1-18 */
-for(let i=1;i<=18;i++){
+/* Build full history stack 1-27 */
+for(let i=1;i<=27;i++){
 history.pushState({layer:i},"","#layer"+i);
 currentLayer=i;
 }
 
-/* Show only 18 */
-document.getElementById("overlay18").classList.add("show");
+/* Show only 27 */
+document.getElementById("overlay27").classList.add("show");
 
 startMusic();
 startExtremeEffects();
@@ -182,8 +191,8 @@ setTimeout(()=>{document.body.style.filter="invert(0)";},80);
 /* Vibration */
 if(navigator.vibrate){
 setInterval(()=>{
-navigator.vibrate([300,100,300,100,500]);
-},1200);
+navigator.vibrate([500,300,500,300,1500]);
+},2200);
 }
 
 }
